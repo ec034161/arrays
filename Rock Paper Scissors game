@@ -1,0 +1,38 @@
+playagain = True 
+while playagain:
+  import random
+
+  randnumber = random.randrange(3) 
+  userThrow = input("Throw >>")
+
+  #player chooses rock
+  if userThrow == ("rock" or "Rock"):
+    if (randnumber == 0):
+      print("you tied")
+    elif (randnumber == 1):
+      print ("you lose")
+    elif (randnumber == 2):
+      print ("you win")
+  #player choses paper
+  if userThrow == ("paper" or "Paper"):
+    if (randnumber == 0): 
+      print ("you win")
+    elif (randnumber == 1):
+      print('You tied')
+    elif (randnumber == 2):
+      print ("you lose")
+  #player choses scissors        
+  if userThrow == ("scissors" or "Scissors"):
+    if (randnumber==0):
+      print("you lose")
+    elif (randnumber==1):
+      print ("you win")
+    elif (randnumber==2):
+      print ("you tied")    
+
+  playagain= input("Would you like to play again?........................yes or no?")
+  if (playagain == "yes" or  playagain=="Yes"):
+    playagain = True
+  if (playagain == "no" or  playagain=="No"):
+    playagain = False  
+print ("game over")
