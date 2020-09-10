@@ -1,0 +1,26 @@
+Notdone = True
+while Notdone:
+
+    print("enter your first number")
+    num1 = int(input())
+    print("enter your second number")
+    num2 = int(input())
+    operation = input()
+
+    if (operation == "+"):
+        print(num1 + num2)
+
+    if (operation == "-"):
+        print(num1 - num2)
+
+    if (operation == "/"):
+        print(num1 / num2)
+
+    finishornot = input(
+        "would you like to do another equation...........y/n   ")
+
+    if (finishornot == "y" or finishornot == "Y"):
+        Notdone = True
+    if (finishornot == "n" or finishornot == "N"):
+        Notdone = False
+print("program is over")
